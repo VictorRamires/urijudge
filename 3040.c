@@ -1,4 +1,3 @@
-//exercicio 3040 uri
 #include<stdio.h>
 
 int main(){
