@@ -26,35 +26,16 @@ int main(){
 	for(auto i: palavras){
 		tam = i.length();
 		for(auto k: inicial){
-			if(a < tam){
-				if(k == i[a]){
-					a++;
-				}
-				if(a == tam){
-					cout << "Y";
+			for(a = 0; a < tam; a++){
+				if(i[a] == k){
+					if(a == tam -1 ){
+						cout << "Y" << "\n";
+						return 0;
+					}
 				}
 			}
-			cout << "i = " << i;
-			cout << "i[a] = " << i[a];
-
-
-		a = 0;
 		}
+		a = 0;
 	}
-	if(a != tam){
-		cout << "N";
-	}
+	cout << "N" << "\n";
 }
-	
-
-
-		/*for(int j = 0; j < tam; j++){
-				
-			if(palavra[j] == i){
-				if(j == tam - 1);
-				cout << "tem";
-			}
-			else
-				return 0;
-
-			}*/
